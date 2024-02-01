@@ -27,7 +27,6 @@ const AddFruitModalContent = ({ closeModal }) => {
     } = useAddFruitForm();
 
     const onImageChange = (event) => {
-        console.log(event.target.files[0]);
         if (
             event.target.files[0].type === "image/jpeg" ||
             event.target.files[0].type === "image/jpg" ||

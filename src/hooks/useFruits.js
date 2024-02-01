@@ -25,7 +25,7 @@ const useFruit = () => {
 
     const addFruit = (item) => {
         const tempFruit = [...fruit];
-        tempFruit.push(item);
+        tempFruit.push({ ...item, id: fruit.length + item.name });
         setFruit(tempFruit);
     };
 

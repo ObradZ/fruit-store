@@ -2,13 +2,10 @@ import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 import FruitList from "./FruitList";
 import { TABS, TABS_KEYS } from "../consts/enums";
 import { useEffect, useState } from "react";
-import useFruit from "../hooks/useFruits";
 import { purplePrimary } from "../consts/consts";
 
 const TabsNavigation = () => {
-    const { isFruitLoading } = useFruit();
     const [tabIndex, setTabIndex] = useState(0);
-    console.log(tabIndex);
 
     const selectTab = (index) => {
         setTabIndex(index);

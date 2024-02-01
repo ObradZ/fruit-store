@@ -31,7 +31,6 @@ const DeleteFruitModalContent = ({ closeModal }) => {
     };
 
     const handleDeleteFruit = () => {
-        console.log(targetId);
         if (targetId !== null) {
             deleteFruit(targetId);
             handleClosePopover();
