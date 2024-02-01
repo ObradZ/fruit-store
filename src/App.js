@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { Typography } from "@mui/material";
+import Header from "./components/Header";
+import TabsNavigation from "./components/TabsNavigation";
+import "react-tabs/style/react-tabs.css";
+import { textColor } from "./consts/consts";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Header />
+            <Typography
+                sx={{ fontSize: "24px", fontWeight: 600, marginBottom: "16px", marginTop: "72px", color: textColor }}
+            >
+                Fruit List
+            </Typography>
+
+            <TabsNavigation />
+        </div>
+    );
 }
 
 export default App;

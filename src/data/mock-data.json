@@ -1,0 +1,272 @@
+[
+    {
+        "tab": "New",
+        "country": "JP",
+        "description": "Very juicy Japanese Apple",
+        "price": 55,
+        "id": 0,
+        "name": "Japanese Apple",
+        "iconUrl": "https://img.freepik.com/free-vector/apple-colorful-vector-design_341269-1123.jpg"
+    },
+    {
+        "tab": "Hot",
+        "country": "US",
+        "description": "Delicious hot American Orange",
+        "name": "American Orange",
+        "price": 82,
+        "id": 1,
+        "iconUrl": "https://img.freepik.com/free-vector/simple-isolated-banana_1308-125007.jpg?size=626&ext=jpg&ga=GA1.1.1448711260.1706572800&semt=sph"
+    },
+    {
+        "tab": "Recommended",
+        "country": "PT",
+        "description": "Sweet and recommended Portuguese Banana",
+        "price": 47,
+        "id": 2,
+        "name": "Portugese Banana",
+        "iconUrl": "https://images.pexels.com/photos/1313267/pexels-photo-1313267.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    },
+    {
+        "tab": "New",
+        "country": "PH",
+        "description": "Exotic new Philippine Mango",
+        "price": 33,
+        "id": 3,
+        "name": "Philippine Mango",
+        "iconUrl": "https://images.pexels.com/photos/1395958/pexels-photo-1395958.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    },
+    {
+        "tab": "Hot",
+        "country": "RS",
+        "description": "Spicy hot Serbian Grape",
+        "price": 69,
+        "id": 4,
+        "name": "Serbian Grape",
+        "iconUrl": "https://img.freepik.com/free-vector/apple-colorful-vector-design_341269-1123.jpg"
+    },
+    {
+        "tab": "Recommended",
+        "country": "JP",
+        "description": "Highly recommended Japanese Kiwi",
+        "price": 18,
+        "id": 5,
+        "name": "Japanese Kiwi",
+        "iconUrl": "https://img.freepik.com/free-vector/simple-isolated-banana_1308-125007.jpg?size=626&ext=jpg&ga=GA1.1.1448711260.1706572800&semt=sph"
+    },
+    {
+        "tab": "New",
+        "country": "US",
+        "description": "Fresh new American Strawberry",
+        "price": 91,
+        "id": 6,
+        "name": "American Strawberry",
+        "iconUrl": "https://images.pexels.com/photos/1313267/pexels-photo-1313267.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    },
+    {
+        "tab": "Hot",
+        "country": "PT",
+        "description": "Hot and spicy Portuguese Pineapple",
+        "price": 74,
+        "id": 7,
+        "name": "Portuguese Pineapple",
+        "iconUrl": "https://images.pexels.com/photos/1395958/pexels-photo-1395958.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    },
+    {
+        "tab": "Recommended",
+        "country": "PH",
+        "description": "Recommended Philippine Blueberry",
+        "price": 42,
+        "id": 8,
+        "name": "Philippine Blueberry",
+        "iconUrl": "https://img.freepik.com/free-vector/apple-colorful-vector-design_341269-1123.jpg"
+    },
+    {
+        "tab": "New",
+        "country": "RS",
+        "description": "Tasty new Serbian Watermelon",
+        "price": 27,
+        "id": 9,
+        "name": "Serbian Watermelon",
+        "iconUrl": "https://img.freepik.com/free-vector/simple-isolated-banana_1308-125007.jpg?size=626&ext=jpg&ga=GA1.1.1448711260.1706572800&semt=sph"
+    },
+    {
+        "tab": "Hot",
+        "country": "JP",
+        "description": "Hot Japanese Raspberry",
+        "price": 61,
+        "id": 10,
+        "name": "Hot Japanese Raspberry",
+        "iconUrl": "https://images.pexels.com/photos/1313267/pexels-photo-1313267.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    },
+    {
+        "tab": "Recommended",
+        "country": "US",
+        "description": "Recommended American Plum",
+        "price": 39,
+        "id": 11,
+        "name": "American Plum",
+        "iconUrl": "https://images.pexels.com/photos/1395958/pexels-photo-1395958.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    },
+    {
+        "tab": "New",
+        "country": "PT",
+        "description": "New and refreshing Portuguese Lemon",
+        "price": 83,
+        "id": 12,
+        "name": "Portuguese Lemon",
+        "iconUrl": "https://img.freepik.com/free-vector/apple-colorful-vector-design_341269-1123.jpg"
+    },
+    {
+        "tab": "Hot",
+        "country": "PH",
+        "description": "Hot Philippine Papaya",
+        "name": "Philippine Papaya",
+        "price": 50,
+        "id": 13,
+        "iconUrl": "https://img.freepik.com/free-vector/simple-isolated-banana_1308-125007.jpg?size=626&ext=jpg&ga=GA1.1.1448711260.1706572800&semt=sph"
+    },
+    {
+        "tab": "Recommended",
+        "country": "RS",
+        "name": "Serbian Blackberry",
+        "description": "Highly recommended Serbian Blackberry",
+        "price": 22,
+        "id": 14,
+        "iconUrl": "https://images.pexels.com/photos/1313267/pexels-photo-1313267.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    },
+    {
+        "tab": "New",
+        "country": "JP",
+        "description": "New and sweet Japanese Peach",
+        "price": 68,
+        "id": 15,
+        "name": "Japanese Peach",
+        "iconUrl": "https://images.pexels.com/photos/1395958/pexels-photo-1395958.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    },
+    {
+        "tab": "Hot",
+        "country": "US",
+        "description": "Hot American Cherry",
+        "price": 75,
+        "id": 16,
+        "name": "American Cherry",
+        "iconUrl": "https://img.freepik.com/free-vector/apple-colorful-vector-design_341269-1123.jpg"
+    },
+    {
+        "tab": "Recommended",
+        "country": "PT",
+        "description": "Recommended Portuguese Avocado",
+        "price": 31,
+        "id": 17,
+        "name": "Portugese Avocado",
+        "iconUrl": "https://img.freepik.com/free-vector/simple-isolated-banana_1308-125007.jpg?size=626&ext=jpg&ga=GA1.1.1448711260.1706572800&semt=sph"
+    },
+    {
+        "tab": "New",
+        "country": "PH",
+        "description": "New and exotic Philippine Guava",
+        "price": 45,
+        "id": 21,
+        "name": "Philippine Guava",
+        "iconUrl": "https://images.pexels.com/photos/1313267/pexels-photo-1313267.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    },
+    {
+        "tab": "Hot",
+        "country": "RS",
+        "description": "Hot and spicy Serbian Passion Fruit",
+        "price": 60,
+        "id": 22,
+        "name": "Passion Fruit",
+        "iconUrl": "https://images.pexels.com/photos/1395958/pexels-photo-1395958.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    },
+    {
+        "tab": "Recommended",
+        "country": "JP",
+        "description": "Highly recommended Japanese Apricot",
+        "price": 28,
+        "id": 23,
+        "name": "Apricot Fruit",
+        "iconUrl": "https://img.freepik.com/free-vector/apple-colorful-vector-design_341269-1123.jpg"
+    },
+    {
+        "tab": "New",
+        "country": "US",
+        "description": "New and sweet American Fig",
+        "price": 49,
+        "id": 24,
+        "name": "Fig Fruit",
+        "iconUrl": "https://img.freepik.com/free-vector/simple-isolated-banana_1308-125007.jpg?size=626&ext=jpg&ga=GA1.1.1448711260.1706572800&semt=sph"
+    },
+    {
+        "tab": "Hot",
+        "country": "PT",
+        "description": "Hot and spicy Portuguese Lychee",
+        "price": 88,
+        "id": 26,
+        "name": "Lychee Fruit",
+        "iconUrl": "https://images.pexels.com/photos/1313267/pexels-photo-1313267.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    },
+    {
+        "tab": "Recommended",
+        "country": "PH",
+        "description": "Recommended Philippine Dragon Fruit",
+        "price": 36,
+        "id": 111,
+        "name": "Dragon Fruit",
+        "iconUrl": "https://images.pexels.com/photos/1395958/pexels-photo-1395958.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    },
+    {
+        "tab": "New",
+        "country": "RS",
+        "description": "New and refreshing Serbian Kiwi",
+        "price": 16,
+        "id": 112,
+        "name": "Kiwi Fruit",
+        "iconUrl": "https://img.freepik.com/free-vector/apple-colorful-vector-design_341269-1123.jpg"
+    },
+    {
+        "tab": "Hot",
+        "country": "JP",
+        "description": "Hot Japanese Mango",
+        "price": 79,
+        "id": 113,
+        "name": "Mango Fruit",
+        "iconUrl": "https://img.freepik.com/free-vector/simple-isolated-banana_1308-125007.jpg?size=626&ext=jpg&ga=GA1.1.1448711260.1706572800&semt=sph"
+    },
+    {
+        "tab": "Recommended",
+        "country": "US",
+        "description": "Highly recommended American Banana",
+        "price": 53,
+        "id": 114,
+        "name": "Banana Fruit",
+        "iconUrl": "https://images.pexels.com/photos/1313267/pexels-photo-1313267.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    },
+    {
+        "tab": "New",
+        "country": "PT",
+        "description": "New and delicious Portuguese Strawberry",
+        "price": 40,
+        "id": 116,
+        "name": "Strawberry Fruit",
+        "iconUrl": "https://images.pexels.com/photos/1395958/pexels-photo-1395958.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    },
+    {
+        "tab": "Hot",
+        "country": "PH",
+        "description": "Hot and exotic Philippine Grape",
+        "price": 65,
+        "id": 1116,
+        "name": "Passion Grape",
+        "iconUrl": "https://img.freepik.com/free-vector/apple-colorful-vector-design_341269-1123.jpg"
+    },
+    {
+        "tab": "Recommended",
+        "country": "RS",
+        "description": "Recommended Serbian Watermelon",
+        "price": 24,
+        "id": 221,
+        "name": "Watermelon Fruit",
+        "iconUrl": "https://img.freepik.com/free-vector/simple-isolated-banana_1308-125007.jpg?size=626&ext=jpg&ga=GA1.1.1448711260.1706572800&semt=sph"
+    }
+]
