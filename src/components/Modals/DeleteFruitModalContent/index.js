@@ -7,7 +7,7 @@ import { Box } from "@mui/system";
 import { COUNTRIES, textColor } from "../../../consts/consts";
 import WarningImage from "../../../assets/warning-icon.svg";
 import sortBy from "lodash/sortBy";
-import { TABS_KEYS } from "../../../consts/enums";
+import { FixedSizeList } from "react-window";
 
 const getColor = (index) => {
     if (index === 0) {
@@ -17,6 +17,34 @@ const getColor = (index) => {
         return "#6B048C";
     }
     return index % 2 === 0 ? "#5F037E" : "#6B048C";
+};
+
+const Row = ({ data, index, style, setTargetId, setAnchorEl }) => {
+    const fr = data.fruit[index];
+
+    return (
+        <FruitItem sx={{ background: getColor(index) }} style={style} key={fr.id}>
+            <FruitPropertyWrapper>
+                <FruitProperty>{fr.tab}</FruitProperty>
+            </FruitPropertyWrapper>
+            <FruitPropertyWrapper>
+                <FruitProperty>{COUNTRIES.find((item) => item.code === fr.country).name}</FruitProperty>
+            </FruitPropertyWrapper>
+            <FruitPropertyWrapper>
+                <FruitProperty textOverflow="ellipsis">{fr.name}</FruitProperty>
+            </FruitPropertyWrapper>
+            <FruitPropertyWrapper>
+                <DeleteButton
+                    onClick={(e) => {
+                        data.setTargetId(fr.id);
+                        data.setAnchorEl(e.currentTarget);
+                    }}
+                >
+                    Delete
+                </DeleteButton>
+            </FruitPropertyWrapper>
+        </FruitItem>
+    );
 };
 
 const DeleteFruitModalContent = ({ closeModal }) => {
@@ -56,29 +84,15 @@ const DeleteFruitModalContent = ({ closeModal }) => {
                         <FruitProperty>Action</FruitProperty>
                     </FruitPropertyWrapper>
                 </FruiHeader>
-                {sortedFruit.map((fr, index) => (
-                    <FruitItem sx={{ background: getColor(index) }}>
-                        <FruitPropertyWrapper>
-                            <FruitProperty>{fr.tab}</FruitProperty>
-                        </FruitPropertyWrapper>
-                        <FruitPropertyWrapper>
-                            <FruitProperty>{COUNTRIES.find((item) => item.code === fr.country).name}</FruitProperty>
-                        </FruitPropertyWrapper>
-                        <FruitPropertyWrapper>
-                            <FruitProperty textOverflow="ellipsis">{fr.name}</FruitProperty>
-                        </FruitPropertyWrapper>
-                        <FruitPropertyWrapper>
-                            <DeleteButton
-                                onClick={(e) => {
-                                    setTargetId(fr.id);
-                                    setAnchorEl(e.currentTarget);
-                                }}
-                            >
-                                Delete
-                            </DeleteButton>
-                        </FruitPropertyWrapper>
-                    </FruitItem>
-                ))}
+                <FixedSizeList
+                    itemSize={40}
+                    itemCount={sortedFruit.length}
+                    height={sortedFruit.length < 11 ? sortedFruit.length * 40 : 440}
+                    itemData={{ fruit: sortedFruit, setTargetId, setAnchorEl }}
+                    itemKey={(index, data) => data.fruit[index].id}
+                >
+                    {Row}
+                </FixedSizeList>
             </List>
             <Popover
                 id={"delete-popover"}

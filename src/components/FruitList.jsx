@@ -9,6 +9,74 @@ import useFruit from "../hooks/useFruits";
 import IconPreview from "../assets/icon-preview.png";
 import { FixedSizeList } from "react-window";
 
+const Row = ({ data, index, style }) => {
+    const fruit = data[index];
+
+    return (
+        <ListItem
+            key={fruit.id}
+            disablePadding
+            style={style}
+            sx={{
+                paddingTop: "16px",
+                paddingBottom: "16px",
+            }}
+        >
+            <Box
+                component="img"
+                src={fruit.iconUrl || IconPreview}
+                alt={fruit.name}
+                sx={{
+                    height: "128px",
+                    width: "128px",
+                    objectFit: "contain",
+                    background: "white",
+                    borderRadius: "8px",
+                    marginRight: "16px",
+                    color: "black",
+                }}
+            />
+            <Box component="div" sx={{ padding: "8px" }}>
+                <Typography
+                    sx={{
+                        fontSize: "14px",
+                        lineHeight: "17px",
+                        color: textColor,
+                        fontWeight: 600,
+                        marginBottom: "12px",
+                    }}
+                >
+                    {fruit.name}
+                </Typography>
+                <Typography
+                    sx={{
+                        fontSize: "14px",
+                        lineHeight: "20px",
+                        color: textColor,
+                        opacity: "0.72",
+                        fontWeight: 400,
+                        marginBottom: "24px",
+                        minheight: "34px",
+                    }}
+                >
+                    {fruit.description}
+                </Typography>
+                <Typography
+                    sx={{
+                        marginTop: "auto",
+                        fontSize: "18px",
+                        lineHeight: "22px",
+                        color: "#209B25",
+                        fontWeight: 700,
+                    }}
+                >
+                    $ {fruit.price}
+                </Typography>
+            </Box>
+        </ListItem>
+    );
+};
+
 const FruitList = ({ selectedTab = "" }) => {
     const { fruit, isFruitLoading } = useFruit();
     const visibleTodos = useMemo(() => {
@@ -70,73 +138,7 @@ const FruitList = ({ selectedTab = "" }) => {
                                         itemData={visibleTodos[key]}
                                         itemKey={(index, data) => data[index].id}
                                     >
-                                        {({ data, index, style }) => {
-                                            const fruit = data[index];
-
-                                            return (
-                                                <ListItem
-                                                    key={fruit.id}
-                                                    disablePadding
-                                                    style={style}
-                                                    sx={{
-                                                        paddingTop: "16px",
-                                                        paddingBottom: "16px",
-                                                    }}
-                                                >
-                                                    <Box
-                                                        component="img"
-                                                        src={fruit.iconUrl || IconPreview}
-                                                        alt={fruit.name}
-                                                        sx={{
-                                                            height: "128px",
-                                                            width: "128px",
-                                                            objectFit: "contain",
-                                                            background: "white",
-                                                            borderRadius: "8px",
-                                                            marginRight: "16px",
-                                                            color: "black",
-                                                        }}
-                                                    />
-                                                    <Box component="div" sx={{ padding: "8px" }}>
-                                                        <Typography
-                                                            sx={{
-                                                                fontSize: "14px",
-                                                                lineHeight: "17px",
-                                                                color: textColor,
-                                                                fontWeight: 600,
-                                                                marginBottom: "12px",
-                                                            }}
-                                                        >
-                                                            {fruit.name}
-                                                        </Typography>
-                                                        <Typography
-                                                            sx={{
-                                                                fontSize: "14px",
-                                                                lineHeight: "20px",
-                                                                color: textColor,
-                                                                opacity: "0.72",
-                                                                fontWeight: 400,
-                                                                marginBottom: "24px",
-                                                                minheight: "34px",
-                                                            }}
-                                                        >
-                                                            {fruit.description}
-                                                        </Typography>
-                                                        <Typography
-                                                            sx={{
-                                                                marginTop: "auto",
-                                                                fontSize: "18px",
-                                                                lineHeight: "22px",
-                                                                color: "#209B25",
-                                                                fontWeight: 700,
-                                                            }}
-                                                        >
-                                                            $ {fruit.price}
-                                                        </Typography>
-                                                    </Box>
-                                                </ListItem>
-                                            );
-                                        }}
+                                        {Row}
                                     </FixedSizeList>
                                 </Box>
                             </li>
