@@ -17,7 +17,7 @@ const FruitList = ({ selectedTab = "" }) => {
         const filtered = fruit.filter((f) => f.tab.toLowerCase() === selectedTab.toLowerCase());
         return groupBy(sortBy(filtered, "name"), "country");
     }, [selectedTab, fruit]);
-
+    
     return (
         <>
             <Box component="div" sx={{ background: purplePrimary, minWidth: "200px" }}>
